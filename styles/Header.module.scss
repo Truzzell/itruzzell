@@ -1,0 +1,28 @@
+.container {
+	padding: 0.6rem 6rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	margin: 1vh auto;
+	background: var(--background);
+	color: white;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+	@media screen and (max-width: 650px) {
+		justify-content: center;
+	}
+}
+
+.title {
+	margin: 0;
+	font-size: calc(2rem + 2vw);
+	@media screen and(max-width:650px) {
+		font-size: calc(2rem + 4vw);
+	}
+}
+
+.slogan {
+	font-size: calc(0.8rem + 0.8vw);
+	font-style: italic;
+	margin: 5px;
+}
