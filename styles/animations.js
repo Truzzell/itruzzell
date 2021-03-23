@@ -1,45 +1,57 @@
-export const pageAnimation = {
-    hidden: {
-        opacity: 0,
-        y: 300,
+// export const pageAnimation = {
+//     hidden: {
+//         opacity: 0,
+//         y: 300,
         
-    },
-    show: {
-        opacity: 1,
-        y: 0,
-        transition: {
-            delayChildren: 0.8,
-            duration: 0.3,
-            when: "beforeChildren",
-            staggerChildren: 0.8,
-        }
-    },
-    exit: {
-        opacity: 0,
-        y: 300,
-        transition: {
-            duration: 0.4,
-        }
-    }
+//     },
+//     show: {
+//         opacity: 1,
+//         y: 0,
+//         transition: {
+//             delayChildren: 0.8,
+//             duration: 0.3,
+//             when: "beforeChildren",
+//             staggerChildren: 0.8,
+//         }
+//     },
+//     exit: {
+//         opacity: 0,
+//         y: 300,
+//         transition: {
+//             duration: 0.4,
+//         }
+//     }
 
-};
+// };
 
-export const titleAnimation = {
-    hidden: {y: 200},
+export const fade = {
+    hide: {opacity: 0, y: -20},
     show: {
         y: 0,
-        transition: {duration: 0.75, delayChildren: 0.8, ease: "easeOut",
+        opacity: 1, 
+        transition: {duration: 2, delayChildren: 0.6,  ease: "easeOut",
         staggerChildren: 0.8},
     }
 };
 
-export const fade = {
-    hidden: {opacity: 0},
+export const titleAnimation = {
+    hide: {y: -200},
     show: {
-        opacity: 1, 
-        transition: {ease: "easeOut", duration: 0.75},
+        y: 0,
+        transition: {duration: 0.6,  ease: "easeOut",
+        },
     }
 };
+
+export const fromLeft = {
+    hide: { x: "-100vw" },
+    show: { x: 0 }
+}
+
+export const fromRight = {
+    hide: { x: "100vw" },
+    show: { x: 0 }
+}
 
 export const imgAnimation = {
     hidden: { scale: 1.2, opacity: 0},

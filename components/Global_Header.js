@@ -8,14 +8,16 @@ const Header = () => {
         variants={fade}
         className={stylesHeader.container}>
             <div className="hide">
-                <motion.h1 variants={titleAnimation} 
+                <motion.h1 
+                variants={titleAnimation} 
                 className={stylesHeader.title}>
                     <span>iT</span>ruzzell
                 </motion.h1>
             </div>
             <div className="hide">
                 <motion.p 
-                variants={titleAnimation} className={stylesHeader.slogan}>
+                variants={titleAnimation} 
+                className={stylesHeader.slogan}>
                     We <span>love</span> what we do
                 </motion.p>
             </div>

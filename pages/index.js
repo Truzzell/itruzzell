@@ -1,7 +1,8 @@
 import Head from 'next/head'
 import Image from "next/image"
 import HomeStyle from '../styles/Home.module.scss'
-import { fade } from "../styles/animations"
+import { motion } from "framer-motion"
+import { fade, fromLeft, fromRight } from "../styles/animations"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faNetworkWired, faFilm, faCode } from '@fortawesome/free-solid-svg-icons'
 
@@ -9,19 +10,22 @@ import { faNetworkWired, faFilm, faCode } from '@fortawesome/free-solid-svg-icon
 
 export default function Home() {
   return (
-    <div>
+    <motion.div variants={fade}>
         
       <Head>
         <title>iTruzzell</title>
         <link rel="icon" href="/favicon.png" />
       </Head> 
       
-      <h1> 
+      <motion.h1
+      variants={fade}> 
           Ein vielseitiges <span className={HomeStyle.highlight}>Team</span> für Ihr Projekt!
-      </h1> 
+      </motion.h1> 
      
       <div className="content">
-            <div className={HomeStyle.card1}>
+            <motion.div
+            variants={fromLeft} 
+            className={HomeStyle.card1}>
               <div className={HomeStyle.icon}>
               <FontAwesomeIcon 
               className={HomeStyle.picto}
@@ -40,9 +44,11 @@ export default function Home() {
                   Kontakt
               </button>
               </div>
-            </div>
+            </motion.div>
             
-            <div className={HomeStyle.card2}>
+            <motion.div 
+            variants={fromRight} 
+            className={HomeStyle.card2}>
               <div className={HomeStyle.img}>
               <Image
                 src="/web.jpg"
@@ -51,9 +57,11 @@ export default function Home() {
                 objectFit="cover"
                 />
               </div>
-            </div>
+            </motion.div>
 
-            <div className={HomeStyle.card3}>
+            <motion.div
+             variants={fromLeft} 
+             className={HomeStyle.card3}>
               <div className={HomeStyle.img}>
                 <Image
                 src="/system.jpg"
@@ -62,9 +70,11 @@ export default function Home() {
                 objectFit="cover"
                 />
                 </div>
-            </div>
+            </motion.div>
 
-            <div className={HomeStyle.card4}>
+            <motion.div 
+             variants={fromRight} 
+             className={HomeStyle.card4}>
                 <div className={HomeStyle.icon}>
                     <FontAwesomeIcon
                     className={HomeStyle.picto} 
@@ -83,9 +93,11 @@ export default function Home() {
                       Kontakt
                   </button>
                 </div>
-            </div>
+            </motion.div>
 
-            <div className={HomeStyle.card5}>
+            <motion.div  
+            variants={fromLeft} 
+            className={HomeStyle.card5}>
                 <div className={HomeStyle.icon}>
                     <FontAwesomeIcon
                     className={HomeStyle.picto} 
@@ -104,8 +116,11 @@ export default function Home() {
                       Kontakt
                   </button>
                 </div>                                   
-              </div>
-              <div className={HomeStyle.card6}>
+              </motion.div>
+
+              <motion.div
+               variants={fromRight} 
+               className={HomeStyle.card6}>
               <div className={HomeStyle.img}>
               <Image
                 src="/video.jpg"
@@ -114,13 +129,13 @@ export default function Home() {
                 objectFit="cover"
               />
               </div>
-              </div>
+              </motion.div>
         
             </div>
             
     
 
-</div>
+</motion.div>
       
   )
 };

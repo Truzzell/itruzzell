@@ -7,7 +7,7 @@ import { motion } from "framer-motion"
 const Layout = ({children}) => {
     return (
         <motion.div 
-        initial="hidden" 
+        initial="hide" 
         animate="show"
         >
         <Nav />
