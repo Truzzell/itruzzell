@@ -1,10 +1,11 @@
 .youtube {
 	display: flex;
 	flex-wrap: wrap;
-	width: 100%;
+	flex: 1 1 500px;
+	justify-content: center;
+	width: 40%;
 	video {
 		max-width: 100%;
-		max-height: 400px;
-		margin: 0 auto;
+		height: 300px;
 	}
 }

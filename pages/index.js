@@ -21,7 +21,7 @@ export default function Home() {
       </h1> 
      
       <div className="content">
-            <div className={HomeStyle.card}>
+            <div className={HomeStyle.card1}>
               <div className={HomeStyle.icon}>
               <FontAwesomeIcon 
               className={HomeStyle.picto}
@@ -42,7 +42,7 @@ export default function Home() {
               </div>
             </div>
             
-            <div className={HomeStyle.card}>
+            <div className={HomeStyle.card2}>
               <div className={HomeStyle.img}>
               <Image
                 src="/web.jpg"
@@ -51,10 +51,9 @@ export default function Home() {
                 objectFit="cover"
                 />
               </div>
-
             </div>
 
-            <div className={HomeStyle.card}>
+            <div className={HomeStyle.card3}>
               <div className={HomeStyle.img}>
                 <Image
                 src="/system.jpg"
@@ -65,7 +64,7 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className={HomeStyle.card}>
+            <div className={HomeStyle.card4}>
                 <div className={HomeStyle.icon}>
                     <FontAwesomeIcon
                     className={HomeStyle.picto} 
@@ -75,7 +74,7 @@ export default function Home() {
                 <div className={HomeStyle.cardText}>
                   <h3>
                     <ul>
-                    <li>Systemintegration</li>
+                      <li>Systemintegration</li>
                       <li>Netwerksysteme</li>
                       <li>Windows & Linux Server</li>
                     </ul>
@@ -86,7 +85,7 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className={HomeStyle.card}>
+            <div className={HomeStyle.card5}>
                 <div className={HomeStyle.icon}>
                     <FontAwesomeIcon
                     className={HomeStyle.picto} 
@@ -106,7 +105,7 @@ export default function Home() {
                   </button>
                 </div>                                   
               </div>
-              <div className={HomeStyle.card}>
+              <div className={HomeStyle.card6}>
               <div className={HomeStyle.img}>
               <Image
                 src="/video.jpg"
