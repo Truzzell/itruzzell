@@ -6,6 +6,7 @@
 }
 
 html {
+	overflow-x: hidden;
 	// --gradient: linear-gradient(170deg, #24a0f3, #2439f3, #121869);
 	--gradient: linear-gradient(170deg, #89ebe6, #24e5f3, #17a4c7);
 	--background: linear-gradient(
@@ -41,7 +42,6 @@ body {
 	margin: 0;
 	background: var(--body);
 	font-family: "Roboto", sans-serif;
-	overflow-x: hidden;
 
 	span {
 		color: var(--primary);
@@ -60,6 +60,7 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 5rem;
+	
 	
 }
 
@@ -153,7 +154,7 @@ h1 {
 
 // SAFARI ONLY **********************
 _::-webkit-full-page-media, _:future, :root .card {
-    margin: 2rem;
+    margin: 1.5rem;
 }
 // SAFARI ONLY ***********************
 
