@@ -1,91 +1,119 @@
 import Image from "next/image"
+import Link from "next/link"
 import HomeStyle from '../styles/Home.module.scss'
+
 
 const web = () => {
     return (
         <>
-        <h1>Webseiten & Grafikdesign</h1>
+        <h1>Webseiten <span>&</span> Grafikdesign</h1>
         <div className="content">
-                <div className={HomeStyle.card1}> 
-                    <div className={HomeStyle.imgText}>
-                        <p>Webseiten Gestaltung</p>
+                <div className="card1 card"> 
+                    <div className={HomeStyle.icon}>
+                        <h2>Webseiten Gestaltung</h2>
                     </div>
-                    <div className={HomeStyle.img}>
+                   
+                    <Link 
+                    href="https://www.shishinodojo.de"
+                    passHref>
+                        <a target="_blank">
+                        <div className="img">
                     <Image
-                        src="/web_03.png"
+                        src="/web/web_03.png"
                         alt="Webseiten Erstellung"
                         layout="fill"
                         objectFit="cover"
+                        quality="75"
+                        objectPosition="top"
                     />
-                    </div>    
+                        </div>  
+                        </a>
+                    </Link>
+                      
                 </div>
 
-                <div className={HomeStyle.card2}>
-                    <div className={HomeStyle.imgText}>
-                        <p>Webseiten Gestaltung</p>
+                <div className="card2 card">
+                    <div className={HomeStyle.icon}>
+                        <h2>Webseiten Gestaltung</h2>
                     </div>
-                    <div className={HomeStyle.img}>
+                    <a href="https://www.gottlob-berlin.de"
+                        target="_blank">
+                    <div className="img">
+                        
                         <Image
-                            src="/web_02.png"
+                            src="/web/web_02.png"
                             alt="Webseiten Erstellung"
                             layout="fill"
                             objectFit="cover"
+                            quality="75"
+                            objectPosition="top"
+
                         />
+                        
                     </div>  
+                    </a>
                 </div>
 
-                <div className={HomeStyle.card3}>
-                    <div className={HomeStyle.imgText}>
-                        <p>Fotomontage</p>
+                <div className="card3 card">
+                    <div className={HomeStyle.icon}>
+                        <h2>Fotomontage</h2>
                     </div>
-                    <div className={HomeStyle.img}>
+                    <div className="img">
                         <Image
-                            src="/web_05.jpg"
+                            src="/web/web_05.jpg"
                             alt="Fotomontagen"
                             layout="fill"
                             objectFit="cover"
+                            quality="75"
+                            objectPosition="top"                            
                         />
                     </div>  
                 </div>
 
-                <div className={HomeStyle.card4}>
-                    <div className={HomeStyle.imgText}>
-                        <p>Logo Gestaltung</p>
+                <div className="card4 card">
+                    <div className={HomeStyle.icon}>
+                        <h2>Logo Gestaltung</h2>
                     </div>
-                    <div className={HomeStyle.img}>
+                    <div className="img">
                         <Image
-                            src="/web_04.png"
+                            src="/web/web_04.png"
                             alt="Logo Gestaltung"
                             layout="fill"
                             objectFit="cover"
+                            quality="75"
+                            objectPosition="top"
                         />
                     </div>  
                 </div>
 
-                <div className={HomeStyle.card5}>
-                    <div className={HomeStyle.imgText}>
-                        <p>Vektorisierung</p>
+                <div className="card5 card">
+                    <div className={HomeStyle.icon}>
+                        <h2>Vektorisierung</h2>
                     </div>
-                    <div className={HomeStyle.img}>
+                    <div className="img">
                         <Image
-                            src="/web_06.png"
+                            src="/web/web_06.png"
                             alt="Vektorisierung"
                             layout="fill"
                             objectFit="cover"
+                            quality="75"
+                            objectPosition="top"
                         />
                     </div>  
                 </div>
 
-                <div className={HomeStyle.card6}>
-                    <div className={HomeStyle.imgText}>
-                        <p>Flyer Gestaltung</p>
+                <div className="card6 card">
+                    <div className={HomeStyle.icon}>
+                        <h2>Flyer Gestaltung</h2>
                     </div>
-                    <div className={HomeStyle.img}>
+                    <div className="img">
                         <Image
-                            src="/web_01.png"
+                            src="/web/web_01.png"
                             alt="Flyergestaltung"
                             layout="fill"
                             objectFit="cover"
+                            quality="75"
+                            objectPosition="top"
                         />
                     </div>  
                 </div>

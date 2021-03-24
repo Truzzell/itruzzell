@@ -25,7 +25,7 @@ export default function Home() {
       <div className="content">
             <motion.div
             variants={fromLeft} 
-            className={HomeStyle.card1}>
+            className="card1 card">
               <div className={HomeStyle.icon}>
               <FontAwesomeIcon 
               className={HomeStyle.picto}
@@ -48,10 +48,10 @@ export default function Home() {
             
             <motion.div 
             variants={fromRight} 
-            className={HomeStyle.card2}>
-              <div className={HomeStyle.img}>
+            className="card2 card">
+              <div className="img">
               <Image
-                src="/web.jpg"
+                src="/home/web.jpg"
                 alt="We build your System"
                 layout="fill"
                 objectFit="cover"
@@ -61,10 +61,10 @@ export default function Home() {
 
             <motion.div
              variants={fromLeft} 
-             className={HomeStyle.card3}>
-              <div className={HomeStyle.img}>
+             className="card3 card">
+              <div className="img">
                 <Image
-                src="/system.jpg"
+                src="/home/system.jpg"
                 alt="We build your System"
                 layout="fill"
                 objectFit="cover"
@@ -74,7 +74,7 @@ export default function Home() {
 
             <motion.div 
              variants={fromRight} 
-             className={HomeStyle.card4}>
+             className="card4 card">
                 <div className={HomeStyle.icon}>
                     <FontAwesomeIcon
                     className={HomeStyle.picto} 
@@ -97,11 +97,12 @@ export default function Home() {
 
             <motion.div  
             variants={fromLeft} 
-            className={HomeStyle.card5}>
+            className="card5 card">
                 <div className={HomeStyle.icon}>
+              
                     <FontAwesomeIcon
                     className={HomeStyle.picto} 
-                    icon={faFilm} />
+                    icon={faFilm} /> 
 
                     <h2>Videoschnitt</h2>
                 </div>
@@ -110,6 +111,7 @@ export default function Home() {
                     <ul>
                     <li>Image Videos</li>
                       <li>Videoschnitt</li>
+                      <li>Schauspiel</li>
                     </ul>
                   </h3>
                   <button type="button" className={HomeStyle.button}>
@@ -120,10 +122,10 @@ export default function Home() {
 
               <motion.div
                variants={fromRight} 
-               className={HomeStyle.card6}>
-              <div className={HomeStyle.img}>
+               className="card6 card">
+              <div className="img">
               <Image
-                src="/video.jpg"
+                src="/home/video.jpg"
                 alt="We build your System"
                 layout="fill"
                 objectFit="cover"

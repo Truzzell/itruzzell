@@ -3,38 +3,38 @@ import HomeStyle from "../styles/Home.module.scss"
 const system = () => {
     return (
         <>
-            <h1>Alles rund um Windows, Netzwerke & Server</h1>
+            <h1>Alles <span>rund</span> um Windows, <span>Netzwerke</span> & Server</h1>
             <div className="content">
-                    <div className={HomeStyle.card}>
-                        <p>
-                            Cluster-Systeme zur Datensicherung
-                        </p>
+                <div className="card">
+                    <div className={HomeStyle.icon}>
+                        <h2>Cluster-Systeme zur Datensicherung</h2>
                     </div>
-                    <div className={HomeStyle.card}>
-                        <p>
-                            Windows
-                        </p>
+                </div>
+                <div className="card">
+                    <div className={HomeStyle.icon}>
+                        <h2>Windows</h2>
                     </div>
-                    <div className={HomeStyle.card}>
-                        <p>
-                            Linux
-                        </p>
+                </div>
+                <div className="card">
+                    <div className={HomeStyle.icon}>
+                        <h2>Linux</h2>
                     </div>
-                    <div className={HomeStyle.card}>
-                        <p>
-                            Server
-                        </p>
+                </div>
+                <div className="card">
+                    <div className={HomeStyle.icon}>
+                        <h2>Server</h2>
                     </div>
-                    <div className={HomeStyle.card}>
-                        <p>
-                            Netzwerke
-                        </p>
+                </div>
+                <div className="card">
+                    <div className={HomeStyle.icon}>
+                        <h2>Netzwerke</h2>
                     </div>
-                    <div className={HomeStyle.card}>
-                        <p>
-                            Betriebssysteme
-                        </p>
+                </div>
+                <div className="card">
+                    <div className={HomeStyle.icon}>
+                        <h2>Betriebssysteme</h2>
                     </div>
+                </div>
             </div>
         </>
     )
