@@ -7,7 +7,10 @@ const system = () => {
             <div className="content">
                 <div className="card">
                     <div className={HomeStyle.icon}>
-                        <h2>Cluster-Systeme zur Datensicherung</h2>
+                        <h2>Datensicherung</h2>
+                    </div>
+                    <div>
+                    Cluster-Systeme 
                     </div>
                 </div>
                 <div className="card">
