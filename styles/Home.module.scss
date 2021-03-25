@@ -11,9 +11,14 @@
 	padding: 2rem 0;
 	justify-content: space-around;
 	flex-wrap: wrap;
+	font-size: calc(6px + 1vw);
 	li {
 		letter-spacing: 1.5px;
-		font-weight: lighter;
+		
+	}
+	p {
+		padding: 0 3rem;
+		text-align: left;
 	}
 }
 
@@ -44,13 +49,11 @@
 	font-size: 16px;
 	margin: auto 0;
 	cursor: pointer;
-
 	background: none;
 	border: 2px solid var(--primary);
 	color: var(--text);
 	padding: 1rem 1.5rem;
 	transition: 1s;
-	// transform: translateX(4rem);
 
 	&:hover {
 		background: var(--primary);
@@ -58,3 +61,7 @@
 		color: #fff;
 	}
 }
+
+
+
+

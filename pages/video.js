@@ -31,38 +31,52 @@ const video = () => {
             </div>
                 
             <div className="card">
-                <div className={HomeStyle.icon}><h2>Babylon Berlin</h2></div>
-                
-                <video 
-                controls
-                controlsList="nodownload" 
-                src="https://video.filmmakers.de/videos/23/117183-142023-h.mp4" />
+                <div className={HomeStyle.icon}>
+                    <h2>Babylon Berlin</h2>
+                </div>
+                <div className={VideoStyle.youtube}>
+                    <video 
+                    controls
+                    controlsList="nodownload" 
+                    src="https://video.filmmakers.de/videos/23/117183-142023-h.mp4" />
+                </div>
             </div>
 
             <div className="card">
-            <div className={HomeStyle.icon}>
-                <h2>Strangers</h2>
-            </div>
-                <video 
-                controls
-                controlsList="nodownload" 
-                src="https://video.filmmakers.de/videos/83/117183-51683-h.mp4" />
-            </div>
-            <div className={VideoStyle.youtube}>
-                <p>EHO (Stilles Echo)</p>
-                <video 
-                controls
-                controlsList="nodownload" 
-                src="https://video.filmmakers.de/videos/27/117183-142027-h.mp4" />
-            </div>
-            <div className={VideoStyle.youtube}>
-                <p>Ein verborgenes Leben</p>
-                <video 
-                controls
-                controlsList="nodownload" 
-                src="https://video.filmmakers.de/videos/55/117183-143655-h.mp4" />
+                <div className={HomeStyle.icon}>
+                    <h2>Strangers</h2>
+                </div>
+                <div className={VideoStyle.youtube}>
+                    <video 
+                    controls
+                    controlsList="nodownload" 
+                    src="https://video.filmmakers.de/videos/83/117183-51683-h.mp4" />
+                </div>
             </div>
 
+            <div className="card">
+                <div className={HomeStyle.icon}>
+                    <h2>EHO (Stilles Echo)</h2>
+                </div>
+                <div className={VideoStyle.youtube}>
+                    <video 
+                    controls
+                    controlsList="nodownload" 
+                    src="https://video.filmmakers.de/videos/27/117183-142027-h.mp4" />
+                </div>
+            </div>
+
+            <div className="card">
+                <div className={HomeStyle.icon}>
+                    <h2>Ein verborgenes Leben</h2>
+                </div>
+                <div className={VideoStyle.youtube}>
+                    <video 
+                    controls
+                    controlsList="nodownload" 
+                    src="https://video.filmmakers.de/videos/55/117183-143655-h.mp4" />
+                </div>
+            </div>
         
         </div>
         </>

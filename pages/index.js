@@ -33,13 +33,13 @@ export default function Home() {
                 <h2>Web & Grafik</h2>
               </div>
               <div className={HomeStyle.cardText}>
-                <h3>
+                
                   <ul>
                     <li>Webdesign</li>
                     <li>Bildbearbeitung</li>
                     <li>Vektorisierung</li>
                   </ul>
-                </h3>
+              
               <button type="button" className={HomeStyle.button}>
                   Kontakt
               </button>
@@ -82,13 +82,13 @@ export default function Home() {
                     <h2>Systeme</h2>
                 </div>
                 <div className={HomeStyle.cardText}>
-                  <h3>
+                  
                     <ul>
                       <li>Systemintegration</li>
                       <li>Netwerksysteme</li>
                       <li>Windows & Linux Server</li>
                     </ul>
-                  </h3>
+                  
                   <button type="button" className={HomeStyle.button}>
                       Kontakt
                   </button>
@@ -107,13 +107,13 @@ export default function Home() {
                     <h2>Videoschnitt</h2>
                 </div>
                 <div className={HomeStyle.cardText}>
-                  <h3>
+                  
                     <ul>
                     <li>Image Videos</li>
                       <li>Videoschnitt</li>
                       <li>Schauspiel</li>
                     </ul>
-                  </h3>
+                  
                   <button type="button" className={HomeStyle.button}>
                       Kontakt
                   </button>

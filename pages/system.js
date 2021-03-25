@@ -9,9 +9,21 @@ const system = () => {
                     <div className={HomeStyle.icon}>
                         <h2>Datensicherung</h2>
                     </div>
-                    <div>
-                    Cluster-Systeme 
-                    </div>
+                    <div className={HomeStyle.cardText}>
+                  
+                        <p>Wir erstellen nach Ihren wünschen und beraten Sie gerne bei allem rund um Datensicherung, z.B: 
+                            <ul>
+                                <li>Cluster-Systeme </li>
+                                <li>Cloud Lösung</li>
+                                <li>Home Server</li>
+                            </ul>
+                        </p>
+                  
+                  {/* <button type="button" className={HomeStyle.button}>
+                      Kontakt
+                  </button> */}
+                </div>                        
+            
                 </div>
                 <div className="card">
                     <div className={HomeStyle.icon}>
